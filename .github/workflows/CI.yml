@@ -7,7 +7,6 @@ on:
 
 jobs:
   push-image:
-    needs: [build]
     runs-on: ubuntu-latest
     steps:
     - name: Repo Checkout
