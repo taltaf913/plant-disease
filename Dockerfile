@@ -14,7 +14,7 @@ RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 # expose port for application
-EXPOSE 7860
+EXPOSE 8501
 
 # start fastapi application
-CMD ["python", "app.py"]
+CMD ["streamlit", "run", "main_app.py"]
